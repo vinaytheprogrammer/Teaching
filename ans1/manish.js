@@ -4,7 +4,7 @@ let age = 2; // Example age
 let isStudent = false;
 let hobbies = ["reading", "writing", "coding"];
 
-// Print the variables
+
 console.log("Name:", name);
 console.log("Age:", age);
 console.log("Is student:", isStudent);
