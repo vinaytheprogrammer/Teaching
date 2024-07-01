@@ -1,5 +1,3 @@
-// payal.js
-
 
 // Assignment 1: Variables and Data Types
 
