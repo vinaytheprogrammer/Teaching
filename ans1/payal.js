@@ -1,6 +1,5 @@
 // payal.js
 
-
 // Assignment 1: Variables and Data Types
 
 // Declare a variable to store your name and print it to the console
