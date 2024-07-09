@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<main>
+    <ul>
+        <% posts.forEach(function(post) { %>
+            <li>
+                <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+                <p><%= post.content.substring(0, 50) %>...</p>
+            </li>
+        <% }); %>
+    </ul>
+</main>
+<%- include('../partials/footer') %>
