@@ -1,0 +1,15 @@
+
+<h2>Posts</h2>
+<a href="/posts/new">Add New Post</a>
+<ul>
+    <% posts.forEach(post => { %>
+        <li>
+            <a href="/posts/<%= post.id %>"><%= post.title %></a>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+            <form action="/posts/<%= post.id %>/delete" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
+

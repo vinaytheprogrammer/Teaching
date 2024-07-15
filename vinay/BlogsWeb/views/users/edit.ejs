@@ -1,0 +1,6 @@
+<h2>Edit User</h2>
+<form action="/users/<%= user.id %>" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%= user.name %>">
+    <button type="submit">Update User</button>
+</form>

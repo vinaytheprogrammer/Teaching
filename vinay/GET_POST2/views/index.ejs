@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+  <h1>Form Example</h1>
+  
+  <h2>GET Form</h2>
+  <form action="/get-form" method="GET">
+    <label for="get-username">Username:</label>
+    <input type="text" id="get-username" name="username" required><br><br>
+    <label for="get-password">Password:</label>
+    <input type="password" id="get-password" name="password" required><br><br>
+    <button type="submit">Submit GET Form</button>
+  </form>
+
+  <h2>POST Form</h2>
+  <form action="/post-form" method="POST">
+    <label for="post-username">Username:</label>
+    <input type="text" id="post-username" name="username" required><br><br>
+    <label for="post-password">Password:</label>
+    <input type="password" id="post-password" name="password" required><br><br>
+    <button type="submit">Submit POST Form</button>
+  </form>
+</body>
+</html>

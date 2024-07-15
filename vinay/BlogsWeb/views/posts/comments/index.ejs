@@ -1,0 +1,15 @@
+
+<h2>Comments for "<%= post.title %>"</h2>
+<a href="/posts/<%= post.id %>/comments/new">Add New Comment</a>
+<ul>
+    <% comments.forEach(comment => { %>
+        <li>
+            <%= comment.content %>
+            <a href="/posts/<%= post.id %>/comments/<%= comment.id %>/edit">Edit</a>
+            <form action="/posts/<%= post.id %>/comments/<%= comment.id %>/delete" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
+<a href="/posts">Back to Posts</a>

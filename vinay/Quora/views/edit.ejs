@@ -1,0 +1,14 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Edit your post</h2>
+        <p>Post ID : <%=post.id%></p>
+        <p>Post Username :  @<%=post.username%></p>
+        <form method="post" action="/posts/">
+            <textarea rows="10" clos="35" name="content"><%=post.content%></textarea>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

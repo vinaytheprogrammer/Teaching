@@ -1,0 +1,7 @@
+
+<h2>Edit Comment</h2>
+<form action="/posts/<%= post.id %>/comments/<%= comment.id %>" method="POST">
+    <label for="content">Comment:</label>
+    <textarea id="content" name="content"><%= comment.content %></textarea>
+    <button type="submit">Update Comment</button>
+</form>

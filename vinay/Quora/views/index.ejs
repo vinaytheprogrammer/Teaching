@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href ="/style.css"/>
+    </head>
+    <body>
+        <h1>Quora Posts</h1>
+        <% for(post of posts) { %>
+            <div class = "posts">
+                <h2 class = "user">  @<%= post.username %> </h2>
+                <h4 class = "content">  <%= post.content %> </h4>
+
+                <br/>
+                <a href = "http://localhost:8080/posts/<%=post.id%>">See in Detail</a>
+                <a href = "http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+                <form method = "post" action="/posts/<%=post.id%>?_method=DELETE">
+                    <button> Delete Post</button>
+                </form>
+            </div>
+       <%  }
+
+        %>
+        <br/>
+        <br/>
+        <a href = "http://localhost:8080/posts/new">Create New Post</a>
+    </body>
+</html>
+
+
