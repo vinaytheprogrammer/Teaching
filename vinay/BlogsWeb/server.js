@@ -15,10 +15,6 @@ app.use('/posts', postRoutes);
 app.use('/posts/:postId/comments', commentRoutes);
 
 
-// Routes
-// app.use('/comments', commentsRouter); // Assuming comments are handled under /comments
-
-// Example route to handle the home page
 app.get('/', (req, res) => {
     res.send('Welcome to my blog!');
 });
