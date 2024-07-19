@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Demo</title>
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('http://localhost:5002/api/data');
+                const data = await response.json();
+                document.getElementById('message').textContent = data.message;
+            } catch (error) {
+                document.getElementById('message').textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>CORS Demo</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <p id="message"></p>
+</body>
+</html>
