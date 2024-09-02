@@ -1,0 +1,9 @@
+Click on "Import" in the top left corner.
+Select the ecommerce_postman_collection.json file.
+Click "Import".
+After importing, you will see the collection in your Postman, and you can test all the endpoints.
+
+Notes:
+The {{authToken}} variable is a placeholder for the JWT token. After logging in, you should set this variable in Postman to test the protected routes (Add to Cart, Remove from Cart, Get Cart Data).
+Replace localhost with the actual host if your server is running on a different machine or port.
+This should help you test all your API endpoints easily in Postman!
